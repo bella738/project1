@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('run') {
       steps {
-        sh 'docker-compose up --duild'
+        sh 'docker-compose up '
       }
     }
 
