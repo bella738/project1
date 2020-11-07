@@ -3,8 +3,7 @@ services:
   web:
     build: .
     ports:
-      - "5000:5000"
-    volumes:
+      - "80:8777"
     links:
       - redis
   redis:

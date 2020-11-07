@@ -1,16 +1,18 @@
-FROM python:3-alpine 
+FROM python:3
 
-ADD MainGame.py ./
+COPY MainGame.py ./
+
 ADD live.py ./
 ADD MemoryGame.py /
 ADD GuessGame.py ./
-ADD MainScore.py ./
+ADD MainScores.py ./
 ADD Score.py ./
 ADD Utils.py ./
 ADD Score.txt ./
 
 workdir ./
 
-RUN pip install
+RUN pip install selenium
+RUN pip install flask
  
 CMD ["python3","./MainGame.py"]
