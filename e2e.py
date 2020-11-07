@@ -1,4 +1,5 @@
 import http
+import sys
 
 from selenium import webdriver
 
@@ -18,4 +19,6 @@ def main_function():
 
 main_function()
 
+if main_function() == 0:
+    sys.exite
 
