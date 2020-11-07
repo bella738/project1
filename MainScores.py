@@ -8,7 +8,7 @@ app = Flask(__name__)
 @app.route('/')
 def score_server():
     try:
-        score = open("/Users/bellamarkovitz/Documents/devops/project 1/Score.txt", "r")
+        score = open("./Score.txt", "r")
     except BaseException as e:
         return """<html>
         <head>
