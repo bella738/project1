@@ -16,10 +16,8 @@ pipeline {
     stage('test') {
       steps {
         sh '''python e2e.py
-rules:
-    - if: main_function() == 0 
-      when: manual
-      allow_failure: true'''
+
+'''
       }
     }
 
