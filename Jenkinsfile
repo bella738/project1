@@ -7,9 +7,9 @@ pipeline {
       }
     }
 
-    stage('test e2e') {
+    stage('test ') {
       steps {
-        sh 'python e2e.py'
+        sh 'curl http://0.0.0.0:8000/'
       }
     }
 
