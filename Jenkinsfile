@@ -3,13 +3,13 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        sh 'sh docker-run-command.txt'
+        sh 'docker-compose up -d'
       }
     }
 
     stage('run') {
       steps {
-        sh 'docker-compose up -d'
+        sh 'sh docker-run-command.txt'
       }
     }
 
