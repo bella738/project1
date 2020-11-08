@@ -1,1 +1,1 @@
-docker run ‫-‬d project1_master_web 
+docker run -d  project1_master_web
