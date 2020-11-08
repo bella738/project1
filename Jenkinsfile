@@ -3,13 +3,13 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        sh 'docker-compose up -d'
+        sh 'sh docker-run-command.txt'
       }
     }
 
     stage('run') {
       steps {
-        sh 'curl http://0.0.0.0:8777/'
+        sh 'docker-compose up -d'
       }
     }
 
