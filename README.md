@@ -11,6 +11,6 @@ guess game
 - e2e.py is testing the application whether it works or not by reading the score in the localhost.
 
 - The Jenkinsfile build a container that running:
-	python 
-	MainScore.py
+	python, 
+	MainScore.py,
 	e2e.py
