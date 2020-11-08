@@ -9,7 +9,7 @@ pipeline {
 
     stage('test ') {
       steps {
-        sh 'curl http://0.0.0.0:8000/'
+        sh 'curl http://0.0.0.0:8777/'
       }
     }
 
