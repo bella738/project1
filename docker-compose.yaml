@@ -3,7 +3,7 @@ services:
   web:
     build: .
     ports:
-      - "8000:8777"
+      - "8777:8777"
     links:
       - redis
   redis:
