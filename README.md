@@ -3,7 +3,7 @@ World of Games
 project1:
 
 play 2 games-
-memory game
+memory game,
 guess game
 
 - The score of the games written in Score.txt
