@@ -2,8 +2,19 @@ pipeline {
   agent any
   stages {
     stage('run') {
-      steps {
-        sh 'docker-compose up -d'
+      parallel {
+        stage('run') {
+          steps {
+            sh 'docker-compose up -d'
+          }
+        }
+
+        stage('open Score.txt') {
+          steps {
+            sh 'cat ./Score.txt'
+          }
+        }
+
       }
     }
 
