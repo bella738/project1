@@ -14,11 +14,13 @@ def test_scores_service(app_url):
 def main_function():
     test = test_scores_service("http://0.0.0.0:8777/")
     if test == False:
-        return "0"
-    else:return "-1"
+        return 0
+    else:return -1
 
 main_function()
 
 if main_function() == 0:
-    sys.exite
+   print(1/0)
+
+    # sys.exite
 
