@@ -1,7 +1,7 @@
 import os
 
 
-SCORES_FILE_NAME = "/Users/bellamarkovitz/Documents/devops/project 1/Score.txt"
+SCORES_FILE_NAME = "./Score.txt"
 BAD_RETURN_CODE = "Something went wrong.."
 
 def screen_cleaner(): #cleaning the screen

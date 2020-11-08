@@ -1,5 +1,6 @@
 FROM python:3.7-alpine
 COPY MainScores.py ./
+COPY Score.txt ./
 
 ADD live.py ./
 ADD MemoryGame.py /
@@ -7,7 +8,6 @@ ADD GuessGame.py ./
 ADD  MainGame.py ./
 ADD Score.py ./
 ADD Utils.py ./
-ADD Score.txt ./
 
 workdir ./
 
