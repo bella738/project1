@@ -7,20 +7,9 @@ pipeline {
       }
     }
 
-    stage('test e2e') {
-      parallel {
-        stage('test e2e') {
-          steps {
-            sh 'python e2e.py'
-          }
-        }
-
-        stage('Score') {
-          steps {
-            sh 'cat ./Score.txt'
-          }
-        }
-
+    stage('test ') {
+      steps {
+        sh 'curl http://0.0.0.0:8777/'
       }
     }
 
